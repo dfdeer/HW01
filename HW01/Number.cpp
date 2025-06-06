@@ -4,11 +4,11 @@
 using namespace std;
 
 void Number::setSize() {
-    cout << "입력할 숫자의 개수: ";
+    cout << "Input count of numbers: ";
     cin >> size;
 }
 void Number::inputNum() {
-    cout << "숫자 " << size << "개를 입력하세요" << endl;
+    cout << "Input " << size << " Numbers" << endl;
     for (int i = 0; i < size; i++)
     {
         cin >> num[i];
@@ -16,7 +16,7 @@ void Number::inputNum() {
 }
 void Number::sortNum() {
     int select;
-    cout << "\n[입력 받은 숫자 정렬]\n" << "1: 오름차순\n2: 내림차순" << endl;
+    cout << "\n[Sort Numbers]\n" << "1: Ascending Order\n2: Descending Order" << endl;
     cin >> select;
 
     for (int i = 0; i < size; i++)
@@ -40,7 +40,7 @@ void Number::sortNum() {
                 }
             }
             else{
-                cout << "잘못된 입력입니다." << endl;
+                cout << "Invalid Input." << endl;
                 return;
             }
         }

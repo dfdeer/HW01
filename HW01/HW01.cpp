@@ -9,8 +9,8 @@ int main()
     n.setSize();
     n.inputNum();
     n.sortNum();
-    cout << "합계" << n.getSum() << endl;
-    cout << "평균" << n.getAvg() << endl;
+    cout << "Sum: " << n.getSum() << endl;
+    cout << "Average: " << n.getAvg() << endl;
 
     return 0;
 }
